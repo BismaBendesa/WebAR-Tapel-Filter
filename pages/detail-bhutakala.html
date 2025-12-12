@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            dropShadow:{
+              button: '0 4px 4px rgba(237, 15, 74, .2)'
+            },
+            keyframes: {
+                wiggle: {
+                  '0%, 100%': { transform: 'rotate(-3deg)' },
+                  '50%': { transform: 'rotate(3deg)' }
+                }
+              },
+            animation: {
+              wiggle: 'wiggle 3.5s ease-in-out infinite'
+            },
+            colors:{
+              'custom-red': '#ED0F4A',
+            },
+            fontFamily: {
+              'satoshi': ['Satoshi', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="w-full relative">
+    <img src="../assets/images/decor-left-x2.png" alt="decoration-left" class="absolute top-0 left-0 z-0 hidden lg:block">
+    <img src="../assets/images/decor-right-x2.png" alt="decoration-left" class="absolute top-0 right-0 z-0 hidden lg:block">
+    <div class="wrapper relative max-w-[1024px] m-auto">
+        <!-- Background Decoration -->
+      <img src="../assets/images/decor-left.png" alt="decoration-left" class="absolute top-0 left-0 z-0 lg:hidden">
+      <img src="../assets/images/decor-right.png" alt="decoration-left" class="absolute top-0 right-0 z-0 lg:hidden">
+
+      <!-- Navigation -->
+      <nav class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 relative z-30">
+        <div class="nav-active">
+          <a href="./catalog.html" class="border-b-2 border-transparent w-fit text-center active:text-custom-red font-bold lg:tracking-wider">Filter Catalog</a>
+          <div class="flex flex-row justify-center items-center gap-2 mt-1">
+            <div class="bg-custom-red w-full h-[2px] mx-auto rounded-full"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red w-full h-[2px] mx-auto rounded-full"></div>
+          </div>
+        </div>
+        <a href="../index.html" class="hover:animate-pulse active:animate-ping duration-500">
+          <img src="../assets/images/barong-logo-inactive.png" alt="logo-landing-page" class="w-[160px] ">
+        </a>
+        <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-fit text-center active:text-custom-red ">Tapel Filter</a>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero-section max-w-[590px] m-auto">
+        <h1 class="italic text-2xl px-4 text-center mt-8">The Demon Guardian Character : <b class="font-black">Tapel Bhutakala</b></h1>
+        <img src="../assets/images/bhutakala-detail.png" alt="hero-image" class="relative z-20 mt-6 m-auto lg:rounded-2xl lg:drop-shadow-xl">
+        <a href="#" class="block px-4 lg:px-0">
+          <button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[42px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300 mt-6">Try Filter
+          </button>
+        </a>
+      </div> 
+
+      <!-- Tapel Explanation -->
+      <div class="tapel-explanation max-w-[590px] m-auto px-4">
+        <h1 class="text-2xl font-medium mt-8 mb-4">Detailed Description</h1>
+        <table class="table-auto w-full h-fit">
+          <tbody>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Name</th>
+              <td class="pl-10 py-4">Tapel Bhuta Kala (also called Tapel Kala or Kala Rau) - A powerful demon/guardian mask from Balinese tradition</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Color Theme</th>
+              <td class="pl-10 py-4">Golden/Bronze with dark accents - Symbolizes raw power, earth energy, and supernatural force.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Type Of Tapel</th>
+              <td class="pl-10 py-4">Tapel Bhuta Kala - Fierce demon-guardian mask representing time, destruction, and protection, used in exorcism rituals and sacred performances.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Material</th>
+              <td class="pl-10 py-4">Sacred wood (pule) with metallic bronze/gold finish, elaborate carved flames and ornamental details, possible jewel or mirror inlays.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Facial Features</th>
+              <td class="pl-10 py-4">
+                <ul>
+                  <li>- Huge bulging eyes with intense, fierce gaze.</li>
+                  <li>- Wide open mouth showing fangs and teeth.</li>
+                  <li>- Red mouth cavity (open throat).</li>
+                  <li>- Large bulbous nose.</li>
+                  <li>- Elaborate flame-like hair/crown radiating outward.</li>
+                  <li>- Ornate scrollwork on sides (ear ornaments).</li>
+                  <li>- Small demon figure on top of crown.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Symbolism</th>
+              <td class="pl-10 py-4">Represents the devourer of negative forces, lord of time and destruction, cosmic protector against evil spirits, transformer of darkness into light, and guardian of temple entrances and sacred spaces.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Use In Rituals</th>
+              <td class="pl-10 py-4">Used in Calonarang performances, temple purification ceremonies (mecaru), exorcism rituals, Barong dance dramas, cremation ceremonies, and protective blessings for new buildings.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Spritual Status</th>
+              <td class="pl-10 py-4">Highly sacred and powerful (sakti) - Must be ritually blessed, stored with extreme care in temple or high place, requires regular offerings and prayers, handled only by priests or trained dancers, considered very dangerous if disrespected.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Movement Style</th>
+              <td class="pl-10 py-4">Powerful, aggressive movements, wide stance with stamping feet, fierce head shaking and turning, threatening gestures toward evil spirits, roaring poses, earth-connected heavy steps, contrasted with moments of stillness.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Performance</th>
+              <td class="pl-10 py-4">Demon-king role in sacred dramas, appears to devour evil and protect the righteous, often battles against Rangda or other forces, performs in highly ritualized context, accompanied by dramatic gamelan music, requires spiritually prepared performer.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Footer -->
+      <footer class="max-w-[590px] mx-auto">
+        <div class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 mt-16 py-4 inset-shadow border border-t-1">
+          <a href="../catalog.html" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-[100px] text-center active:text-custom-red">Filter Catalog</a>
+          <a href="../index.html"><img src="../assets/images/barong-logo-small.png" alt="logo-landing-page"></a>
+          <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-[100px] text-center active:text-custom-red">Tapel Filter</a>
+        </div>     
+        <img src="../assets/images/tridatu-pattern.png" alt="tridatu-pattern" class="w-full">
+      </footer>
+    </div>
+    <!-- Footer Background Decoration -->
+    <img src="../assets/images/footer-decor-left.png" alt="decoration-left" class="absolute bottom-0 left-0 z-0 lg:block hidden">
+    <img src="../assets/images/footer-decor-right.png" alt="decoration-left" class="absolute bottom-0 right-0 z-0 lg:block hidden">
+    
+  </body>
+</html>

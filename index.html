@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            dropShadow:{
+              button: '0 4px 4px rgba(237, 15, 74, .2)'
+            },
+            keyframes: {
+                wiggle: {
+                  '0%, 100%': { transform: 'rotate(-3deg)' },
+                  '50%': { transform: 'rotate(3deg)' }
+                }
+              },
+            animation: {
+              wiggle: 'wiggle 3.5s ease-in-out infinite'
+            },
+            colors:{
+              'custom-red': '#ED0F4A',
+            },
+            fontFamily: {
+              'satoshi': ['Satoshi', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body class="w-full relative">
+    <img src="./assets/images/decor-left-x2.png" alt="decoration-left" class="absolute top-0 left-0 z-0 hidden lg:block">
+    <img src="./assets/images/decor-right-x2.png" alt="decoration-left" class="absolute top-0 right-0 z-0 hidden lg:block">
+    <div class="wrapper relative max-w-[1024px] m-auto">
+        <!-- Background Decoration -->
+      <img src="./assets/images/decor-left.png" alt="decoration-left" class="absolute top-0 left-0 z-0 lg:hidden">
+      <img src="./assets/images/decor-right.png" alt="decoration-left" class="absolute top-0 right-0 z-0 lg:hidden">
+
+      <!-- Navigation -->
+      <nav class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 relative z-30">
+        <a href="./catalog.html" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-fit text-center active:text-custom-red">Filter Catalog</a>
+        <a href="#"><img src="./assets/images/barong-logo.png" alt="logo-landing-page" class="w-[160px]"></a>
+        <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-fit text-center active:text-custom-red">Tapel Filter</a>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <h1 class="italic text-2xl px-4 text-center mt-8">Explore Balinese Tapel By Trying Our <b class="font-black">3D Filter.</b></h1>
+        <img src="./assets/images/hero-image.png" alt="hero-image" class="relative z-20 mt-6 m-auto lg:rounded-2xl lg:drop-shadow-xl">
+      </div> 
+
+      <!-- Feature Section -->
+      <section class="feature px-4 mt-4 mx-auto flex flex-col justify-center items-start lg:items-center">
+        <h1 class="text-2xl font-medium mb-4">Feature</h1>
+        <div class="feature-card lg:w-[560px]">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/images/feature-card-one.png" alt="feature-card-img" class="w-[140px]">
+            <div class="flex-grow">
+              <h2 class="font-medium text-xl mb-2">Explore Catalog</h2>
+              <p class="text-base font-light mb-4 ">Explore all of tapel collection that we have and try the filter.</p>
+              <a href="./catalog.html">
+                <button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Explore
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card lg:w-[560px] mt-4">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/images/feature-card-two.png" alt="feature-card-img" class="w-[140px]">
+            <div class="flex-grow">
+              <h2 class="font-medium text-xl mb-2">Try Filter</h2>
+              <p class="text-base font-light mb-4 ">Try and see all the filter that we have.</p>
+             <a href="#">
+                <button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Try Filter
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Background Decoration -->
+      <img src="./assets/images/decor-left.png" alt="decoration-left" class="absolute top-[850px] left-0 z-0 lg:hidden">
+      <img src="./assets/images/decor-right.png" alt="decoration-left" class="absolute top-[850px] right-0 z-0 lg:hidden">
+
+      <!-- Tapel Introduction -->
+      <section class="tapel-introduction px-4 mt-16 max-w-[590px] mx-auto">
+        <h1 class="text-2xl font-medium mb-4 text-center">What is Tapel?</h1>
+        <img src="./assets/images/tapel-img.png" alt="Tapel Image" class="mx-auto animate-wiggle">
+        <p class="text-justify font-light mt-8">The word Tapel refers to a mask, especially in the context of Barong, Rangda, and other sacred performance masks.</p>
+        <p class="text-justify font-light mt-2">A tapel especially for Barong or Rangda is considered sacred (keramat). It is kept in a shrine, blessed, and a only in rituals or special performances.</p>
+        <p class="text-justify font-light mt-2">Before a tapel is used, priests perform a ceremony called melaspas to “give life” to the mask. Some masks are believed to have spiritual presence and must be treated with respect.</p>
+       <a href="#" class="mt-8 block">
+          <button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] lg:h-[40px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Read Manual Book📕
+          </button>
+        </a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="max-w-[590px] mx-auto">
+        <div class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 mt-16 py-4 inset-shadow border border-t-1">
+          <a href="./catalog.html" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-[100px] text-center active:text-custom-red">Filter Catalog</a>
+          <a href="#"><img src="./assets/images/barong-logo-small.png" alt="logo-landing-page"></a>
+          <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-[100px] text-center active:text-custom-red">Tapel Filter</a>
+        </div>     
+        <img src="./assets/images/tridatu-pattern.png" alt="tridatu-pattern" class="w-full">
+      </footer>
+    </div>
+    <!-- Footer Background Decoration -->
+    <img src="./assets/images/footer-decor-left.png" alt="decoration-left" class="absolute bottom-0 left-0 z-0 lg:block hidden">
+    <img src="./assets/images/footer-decor-right.png" alt="decoration-left" class="absolute bottom-0 right-0 z-0 lg:block hidden">
+    
+
+  </body>
+</html>

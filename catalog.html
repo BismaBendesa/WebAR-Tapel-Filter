@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors:{
+              'custom-red': '#ED0F4A',
+            },
+            fontFamily: {
+              'satoshi': ['Satoshi', 'sans-serif'],
+            }
+          }
+        }
+      }
+      
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body class="w-full relative">
+    <!-- Decoration Desktop -->
+    <img src="./assets/images/decor-left-x2.png" alt="decoration-left" class="absolute top-0 left-0 z-0 hidden lg:block">
+    <img src="./assets/images/decor-right-x2.png" alt="decoration-left" class="absolute top-0 right-0 z-0 hidden lg:block">
+    <div class="wrapper relative max-w-[1024px] m-auto">
+      
+      <!-- Background Decoration -->
+      <img src="./assets/images/decor-left.png" alt="decoration-left" class="absolute top-0 left-0 z-0 lg:hidden">
+      <img src="./assets/images/decor-right.png" alt="decoration-left" class="absolute top-0 right-0 z-0 lg:hidden">
+
+      <!-- Navigation -->
+      <nav class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4">
+        <div class="nav-active">
+          <a href="./catalog.html" class="border-b-2 border-transparent w-fit text-center active:text-custom-red font-bold lg:tracking-wider">Filter Catalog</a>
+          <div class="flex flex-row justify-center items-center gap-2 mt-1">
+            <div class="bg-custom-red w-full h-[2px] mx-auto rounded-full"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red w-full h-[2px] mx-auto rounded-full"></div>
+          </div>
+        </div>
+        <a href="./index.html" class="hover:animate-pulse active:animate-ping duration-500">
+          <img src="./assets/images/barong-logo-inactive.png" alt="logo-landing-page" class="w-[160px] ">
+        </a>
+        <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-fit text-center active:text-custom-red ">Tapel Filter</a>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero-section m-auto max-w-[590px]">
+        <h1 class="italic text-2xl px-4 text-center mt-8">Browse all of the Balinese Tapel <b class="font-black">3D Filter.</b> Try & Have Fun With This Filter</h1>
+        <a class="underline hover:font-bold active:text-custom-red text-center w-full mt-6 inline-block cursor-pointer">Read Our Manual Book</a>
+      </div>
+
+      <!-- Tapel Catalog -->
+      <div class="tapel-catalog mt-10 px-4 max-w-[590px] mx-auto">
+        <h1 class="text-2xl font-medium mb-4">Tapel Catalog</h1>
+        <div class="tapel-card">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/images/tapel-bondres.png" alt="feature-card-img" class="w-[140px]">
+            <div class="flex-grow">
+                <h2 class="font-medium text-xl mb-2">Tapel Bondres</h2>
+                <p class="text-base font-light mb-4">Golden/Bronze - Symbolizes dignity, refinement, and divine protection.</p>
+                <div class="flex flex-row flex-grow gap-2">
+                  <a href="./pages/detail-bondres.html" class="w-full"><button class="text-base font-medium text-white bg-black rounded-full w-full h-[36px] block lg:h-[40px] hover:bg-white hover:text-black hover:border hover:border-[#000] hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Detail</button></a>
+                  <a href="#" class="w-full"><button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] lg:h-[40px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Try Filter</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tapel-card mt-8">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/images/tapel-barong.png" alt="feature-card-img" class="w-[140px]">
+            <div class="flex-grow">
+                <h2 class="font-medium text-xl mb-2">Tapel Barong</h2>
+                <p class="text-base font-light mb-4">Dominantly red on the face, symbolizing energy, protection, and fiery spirit.</p>
+                <div class="flex flex-row flex-grow gap-2">
+                  <a href="./pages/detail-barong.html" class="w-full"><button class="text-base font-medium text-white bg-black rounded-full w-full h-[36px] block lg:h-[40px] hover:bg-white hover:text-black hover:border hover:border-[#000] hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Detail</button></a>
+                  <a href="#" class="w-full"><button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] lg:h-[40px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Try Filter</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tapel-card mt-8">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/images/tapel-rangda.png" alt="feature-card-img" class="w-[140px]">
+            <div class="flex-grow">
+                <h2 class="font-medium text-xl mb-2">Tapel Rangda</h2>
+                <p class="text-base font-light mb-4">Dark red/maroon with gold accents. Symbolizes black magic, blood, death, chaos.</p>
+                <div class="flex flex-row flex-grow gap-2">
+                  <a href="./pages/detail-rangda.html" class="w-full"><button class="text-base font-medium text-white bg-black rounded-full w-full h-[36px] block lg:h-[40px] hover:bg-white hover:text-black hover:border hover:border-[#000] hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Detail</button></a>
+                  <a href="#" class="w-full"><button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] lg:h-[40px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Try Filter</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tapel-card mt-8">
+          <div class="flex gap-4 items-center">
+            <img src="./assets/images/tapel-bhutakala.png" alt="feature-card-img" class="w-[140px]">
+            <div class="flex-grow">
+                <h2 class="font-medium text-xl mb-2">Tapel Bhutakala</h2>
+                <p class="text-base font-light mb-4">Golden/Bronze with dark accents. Symbolizes raw power, earth energy.</p>
+                <div class="flex flex-row flex-grow gap-2">
+                  <a href="./pages/detail-bhutakala.html" class="w-full"><button class="text-base font-medium text-white bg-black rounded-full w-full h-[36px] block lg:h-[40px] hover:bg-white hover:text-black hover:border hover:border-[#000] hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Detail</button></a>
+                  <a href="#" class="w-full"><button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[36px] lg:h-[40px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300">Try Filter</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="max-w-[590px] mx-auto">
+        <div class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 mt-16 py-4 inset-shadow border border-t-1">
+          <a href="#" class="border-b-2 pb-1 border-custom-red transition-colors duration-300 text-center active:text-custom-red font-bold w-fit">Filter Catalog</a>
+          <a href="./index.html" class="hover:animate-pulse active:animate-ping"><img src="./assets/images/barong-logo-small.png" alt="logo-landing-page"></a>
+          <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-fit text-center active:text-custom-red">Tapel Filter</a>
+        </div>     
+        <img src="./assets/images/tridatu-pattern.png" alt="tridatu-pattern" class="w-full">
+      </footer>
+    </div>
+    <!-- Footer Background Decoration -->
+    <img src="./assets/images/footer-decor-left.png" alt="decoration-left" class="absolute bottom-0 left-0 z-0 lg:block hidden">
+    <img src="./assets/images/footer-decor-right.png" alt="decoration-left" class="absolute bottom-0 right-0 z-0 lg:block hidden">
+  </body>
+</html>

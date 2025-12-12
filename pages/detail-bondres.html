@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            dropShadow:{
+              button: '0 4px 4px rgba(237, 15, 74, .2)'
+            },
+            keyframes: {
+                wiggle: {
+                  '0%, 100%': { transform: 'rotate(-3deg)' },
+                  '50%': { transform: 'rotate(3deg)' }
+                }
+              },
+            animation: {
+              wiggle: 'wiggle 3.5s ease-in-out infinite'
+            },
+            colors:{
+              'custom-red': '#ED0F4A',
+            },
+            fontFamily: {
+              'satoshi': ['Satoshi', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="w-full relative">
+    <img src="../assets/images/decor-left-x2.png" alt="decoration-left" class="absolute top-0 left-0 z-0 hidden lg:block">
+    <img src="../assets/images/decor-right-x2.png" alt="decoration-left" class="absolute top-0 right-0 z-0 hidden lg:block">
+    <div class="wrapper relative max-w-[1024px] m-auto">
+        <!-- Background Decoration -->
+      <img src="../assets/images/decor-left.png" alt="decoration-left" class="absolute top-0 left-0 z-0 lg:hidden">
+      <img src="../assets/images/decor-right.png" alt="decoration-left" class="absolute top-0 right-0 z-0 lg:hidden">
+
+      <!-- Navigation -->
+      <nav class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 relative z-30">
+        <div class="nav-active">
+          <a href="./catalog.html" class="border-b-2 border-transparent w-fit text-center active:text-custom-red font-bold lg:tracking-wider">Filter Catalog</a>
+          <div class="flex flex-row justify-center items-center gap-2 mt-1">
+            <div class="bg-custom-red w-full h-[2px] mx-auto rounded-full"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red rounded-full w-[10px] h-[2.5px] mx-auto"></div>
+            <div class="bg-custom-red w-full h-[2px] mx-auto rounded-full"></div>
+          </div>
+        </div>
+        <a href="../index.html" class="hover:animate-pulse active:animate-ping duration-500">
+          <img src="../assets/images/barong-logo-inactive.png" alt="logo-landing-page" class="w-[160px] ">
+        </a>
+        <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-fit text-center active:text-custom-red ">Tapel Filter</a>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero-section max-w-[590px] m-auto">
+        <h1 class="italic text-2xl px-4 text-center mt-8">The Funny Hillarious Character : <b class="font-black">Tapel Bondres</b></h1>
+        <img src="../assets/images/bondres-detail.png" alt="hero-image" class="relative z-20 mt-6 m-auto lg:rounded-2xl lg:drop-shadow-xl">
+        <a href="#" class="block px-4 lg:px-0">
+          <button class="text-base font-medium text-white bg-custom-red rounded-full w-full h-[42px] hover:bg-white hover:text-custom-red hover:border hover:border-custom-red hover:drop-shadow hover:drop-shadow-button active:translate-y-1 duration-300 mt-6">Try Filter
+          </button>
+        </a>
+      </div> 
+
+      <!-- Tapel Explanation -->
+      <div class="tapel-explanation max-w-[590px] m-auto px-4">
+        <h1 class="text-2xl font-medium mt-8 mb-4">Detailed Description</h1>
+        <table class="table-auto w-full h-fit">
+          <tbody>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Name</th>
+              <td class="pl-10 py-4">A Balinese comedic-protective character mask.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Color Theme</th>
+              <td class="pl-10 py-4">Golden/Bronze - Symbolizes dignity, refinement, and divine protection.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Type Of Tapel</th>
+              <td class="pl-10 py-4">Comic relief character with spiritual protective powers used in Topeng performances.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Material</th>
+              <td class="pl-10 py-4">Sacred wood (likely pule) with metallic gold/bronze finish, decorative elements, and traditional carved ornamentation.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Facial Features</th>
+              <td class="pl-10 py-4">
+                <ul>
+                  <li>- Large, round bulging eyes with intense gaze.</li>
+                  <li>- Wide grin showing full teeth.</li>
+                  <li>- Ornate flame-like crown/headdress.</li>
+                  <li>- Curved mustache.</li>
+                  <li>- Strong arched eyebrows.</li>
+                  <li>- Third eye/forehead ornament.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Symbolism</th>
+              <td class="pl-10 py-4">Represents protective guardian spirit, balance between sacred and profane, cosmic vigilance, divine comedy, and community protection.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Use In Rituals</th>
+              <td class="pl-10 py-4">Used in Topeng performances, temple ceremonies (odalan), purification rituals, ceremonial processions, and village protection rites.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Spritual Status</th>
+              <td class="pl-10 py-4">Sacred object. Must be blessed, stored properly in high clean place, receive offerings, and handled with respect by trained caretakers.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Movement Style</th>
+              <td class="pl-10 py-4">Quick jerky movements, exaggerated gestures, energetic footwork, audience interaction, alternating tempo, and theatrical physicality.</td>
+            </tr>
+            <tr class="border-b border-[#cacaca] py-2">
+              <th class="py-4 text-left font-medium">Performance</th>
+              <td class="pl-10 py-4">Comic protector role in Topeng drama, provides relief while maintaining spiritual protection, speaks colloquial Balinese, engages audience, performed with gamelan orchestra.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Footer -->
+      <footer class="max-w-[590px] mx-auto">
+        <div class="w-full flex flex-row justify-between lg:justify-center lg:gap-8 items-center m-auto px-4 mt-16 py-4 inset-shadow border border-t-1">
+          <a href="../catalog.html" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-[100px] text-center active:text-custom-red">Filter Catalog</a>
+          <a href="../index.html"><img src="../assets/images/barong-logo-small.png" alt="logo-landing-page"></a>
+          <a href="#" class="border-b-2 border-transparent hover:border-custom-red transition-colors duration-300 w-[100px] text-center active:text-custom-red">Tapel Filter</a>
+        </div>     
+        <img src="../assets/images/tridatu-pattern.png" alt="tridatu-pattern" class="w-full">
+      </footer>
+    </div>
+    <!-- Footer Background Decoration -->
+    <img src="../assets/images/footer-decor-left.png" alt="decoration-left" class="absolute bottom-0 left-0 z-0 lg:block hidden">
+    <img src="../assets/images/footer-decor-right.png" alt="decoration-left" class="absolute bottom-0 right-0 z-0 lg:block hidden">
+    
+  </body>
+</html>
